@@ -1,0 +1,29 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 30px;
+}
+button {
+  background-color: #3a1c71;
+  color: rgb(204, 49, 10);
+  width: 100%;
+}
+.ogposts {
+  display: flex;
+}
+
+.heading {
+  font-weight: 400;
+  color: rgba(0, 255, 242, 0.596);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.HomePage {
+  text-align: center;
+  margin: 0px;
+  background: linear-gradient(to right, #ffaf7b, #d76d77, #3a1c71);
+}
+button:hover {
+  background-color: #d76d77;
+}
