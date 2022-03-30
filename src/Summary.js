@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Summary.css";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 function Summary() {
   const [posts, setPosts] = useState([]);
@@ -35,10 +37,44 @@ function Summary() {
 
         <div>
           <h1>{posts}</h1>
-          this is {id}
+          <hr></hr>
+          {/* this is {id} */}
         </div>
-
+        <h2>The summary:</h2>
         <div>{summary}</div>
+        <hr></hr>
+        <div>
+          <h4>Book Tickets?</h4>
+          <Popup trigger={<button> Tickets</button>} position="right center">
+            <form>
+              <label>
+                <h1>Book Tickets?</h1>
+              </label>
+              <div class="form-row">
+                <div class="col">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="col">
+                  <label>Movie</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder={posts}
+                    value={posts}
+                  />
+                </div>
+              </div>
+              <div className="btn">
+                <button type="submit">Book</button>
+              </div>
+            </form>
+          </Popup>
+        </div>
       </div>
     </>
   );

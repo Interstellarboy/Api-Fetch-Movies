@@ -1,0 +1,26 @@
+h1 {
+  background: radial-gradient(
+    circle,
+    #f48fb1 0%,
+    #ce93d8 20%,
+    #b2ebf2 40%,
+    #a5d6a7 60%,
+    #b39ddb 100%
+  );
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: gradient 2s linear infinite alternate;
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+  margin-bottom: 0%;
+}
+
+.head {
+  margin: 0%;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+* {
+  margin: 0%;
+}

@@ -32,6 +32,7 @@ function HomePage() {
     <>
       <div className="HomePage">
         <div></div>
+
         <div className="posts">
           {/* this is  {username} */}
           {/* <img src={images} alt="" /> */}
@@ -41,6 +42,8 @@ function HomePage() {
               <img className="ogposts" src={wholeshow.show.image.medium} />
 
               <button
+                class="button-55"
+                role="button"
                 onClick={() => {
                   navigate("/summary/" + wholeshow.show.id);
                 }}

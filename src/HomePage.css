@@ -1,22 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap");
+
 .posts {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding-left: 30px;
 }
-button {
-  background-color: #3a1c71;
-  color: rgb(204, 49, 10);
-  width: 100%;
-}
+
 .ogposts {
   display: flex;
 }
 
 .heading {
-  font-weight: 400;
-  color: rgba(0, 255, 242, 0.596);
-  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle,
+    #f48fb1 0%,
+    #ce93d8 20%,
+    #b2ebf2 40%,
+    #a5d6a7 60%,
+    #b39ddb 100%
+  );
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: gradient 2s linear infinite alternate;
+  font-family: Open Sans, sans-serif;
+  font-weight: 100;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+img {
+  transition: transform 450ms;
+  padding: 10px;
+}
+
+img:hover {
+  transform: scale(1.08);
 }
 
 .HomePage {
@@ -24,6 +55,45 @@ button {
   margin: 0px;
   background: linear-gradient(to right, #ffaf7b, #d76d77, #3a1c71);
 }
-button:hover {
-  background-color: #d76d77;
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: rgb(62, 243, 228);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
